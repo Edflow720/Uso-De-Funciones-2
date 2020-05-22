@@ -1,0 +1,31 @@
+package usodefunciones;
+
+import java.util.Scanner;
+
+public class UsodeFunciones {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        int a = 0, b = 0, c = 0;
+        
+        System.out.print("Ingrese el Valor de a: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese el Valor de B: ");
+        b = entrada.nextInt();
+        
+        c = suma(a, b);
+        
+        System.out.println("");
+        System.out.print("La suma de los enteros es: " + c);
+        System.out.println("");
+        System.out.println("");
+        
+    }
+    
+    public static int suma (int x, int y){
+        int s = 0;
+        s = x + y;
+        return s;
+    }
+    
+}
